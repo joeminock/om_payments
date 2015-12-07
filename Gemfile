@@ -38,6 +38,9 @@ gem 'stripe', '~> 1.31'
 #figaro gem for securely managing credentials
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
+#Add Letter opener for sendgrid and handling emails in development
+gem 'letter_opener', group: :development
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
