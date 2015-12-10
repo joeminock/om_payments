@@ -41,6 +41,12 @@ gem 'figaro', '~> 1.1', '>= 1.1.1'
 #Add Letter opener for sendgrid and handling emails in development
 gem 'letter_opener', group: :development
 
+#Add ActiveAdmin for backend admin interface access to orders.
+gem 'activeadmin', '~> 1.0.0.pre2'
+
+#add Devise to support login for active
+gem 'devise', '~> 3.5', '>= 3.5.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
