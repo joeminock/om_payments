@@ -1,3 +1,9 @@
+<section id="content-details" class="row clearfix">
+    <article id="details-article" class="col-sm-8">
+        <h1 id="article-title">Our Courses</h1>
+    </article>
+</section>
+
 <section id="products">
  <% @products.each do |product| %>
  	<div class="product clearfix">
@@ -9,29 +15,4 @@
    <p class="product-title"><%= product.title %></p></a>
  	</div>
  <% end %>
- 
-
-
-
-
-
-
-
-
- <div class="product clearfix">
-   <a href="product-detail.html">
-    <div class="product-image-container">
-     <img src="<%= asset_path 'product-copywriting.png' %>" alt="product image"/>
-     <span class="product-price">$49.99</span>
-   </div>
-   <p class="product-title">Copywriting</p></a>
- </div>
- <div class="product clearfix">
-   <a href="product-detail.html">
-    <div class="product-image-container">
-     <img src="<%= asset_path 'product-analytics.png' %>" alt="product image"/>
-     <span class="product-price">$49.99</span>
-   </div>
-   <p class="product-title">Analytics</p></a>
-  </div>
- </section>
+</section>
