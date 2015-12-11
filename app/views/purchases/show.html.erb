@@ -6,13 +6,13 @@
    <p><strong>RECEIPT</strong></p>
      <div id="receipt-details" class="row clearfix">
   <div class="col-sm-8 receipt-left">
-<p><strong class="font-weight-heavy"><%= product.title %></strong><br/> <span class="font-weight-light"><%= product.subtitle %></span></p>
+<p><strong class="font-weight-heavy"><%= @product.title %></strong><br/> <span class="font-weight-light"><%= @product.subtitle %></span></p>
     </div>
 <div class="col-sm-4">
 $4.99
  </div>
 </div>
-<a href="https://s3.amazonaws.com/om-payments/Joe+Minock+One+Month+Rails.pdf"><button type="button" class="btn btn-success btn-xs">DOWNLOAD YOUR FILE
+<a href="<%= @product.download_url %>"<button type="button" class="btn btn-success btn-xs">DOWNLOAD YOUR FILE
 </button></a>
 <footer id="receipt-footer">
 <small>Your purchase is complete. Watch your video... and start Growth Hacking!</small>
