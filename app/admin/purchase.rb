@@ -3,6 +3,7 @@ ActiveAdmin.register Purchase do
 		Purchase.class_eval do
 			def to_param
 				id.to_s
+				
 			end
 		end
 	end
