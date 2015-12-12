@@ -5,11 +5,12 @@ class Product < ActiveRecord::Base
 	def price_in_cents
 		(self.price * 100).to_i
 	end
+
 	def thumbnail_image_name
-    	"product-#{image_name}.png"
+    	"product-#{title.split.slice(0..-2).join(" ").gsub(" ")}"
 	end
 
 	def header_image_name
-    	"header-#{image_name}.png"
+    	"header-#{title.split.slice(0..-2).join(" ").gsub(" ")}"
     end
 end
