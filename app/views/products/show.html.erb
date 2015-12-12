@@ -1,5 +1,6 @@
-<body>
-
+<% content_for :head do %>
+	<%= image_tag(@product.header_image_name, id: "content-head-img", alt: '#{@product.title}') %>
+<% end %>
 	<section id="content-details" class="row clearfix">
 	    <article id="details-article" class="col-sm-8">
 	        <h1 id="article-title"><%= @product.title %> <span class="font-weight-light"><%= @product.subtitle %></span></h1>
@@ -74,7 +75,3 @@ Made by <a href="http://onemonth.com" target="_blank"><%= image_tag('one-month-l
       </div>
     </div>
   </div>
-
-
-</body>
-</html>
